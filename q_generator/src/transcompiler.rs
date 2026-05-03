@@ -3,7 +3,6 @@ use std::io::{self, BufRead};
 use std::path::Path;
  
 use crate::items::{Choose, Insert, Html, Js, Css};
-use crate::items::qrcode::print_qrcode;
 
 #[derive(Debug)]
 pub enum Entry {
@@ -124,10 +123,6 @@ where
             return Ok(out);
         }
     }
-
-    // If we exhausted input without closing, return an error
-    let index_url = "https://maibloom.github.io/docs";
-    print_qrcode(index_url);
     Err(io::Error::new(
         io::ErrorKind::UnexpectedEof,
         "unterminated brace block",

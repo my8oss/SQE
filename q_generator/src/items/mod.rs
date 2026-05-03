@@ -1,6 +1,5 @@
 pub mod choose;
 pub mod common;
-pub mod qrcode;
 pub mod insert;
 pub mod html;
 pub mod js;

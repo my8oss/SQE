@@ -17,7 +17,7 @@ use glib;
 
 fn main() {
     let app = Application::builder()
-        .application_id("com.mai.sqe_idle")
+        .application_id("com.my8oss.sqe_idle")
         .build();
 
     app.connect_activate(build_ui);
