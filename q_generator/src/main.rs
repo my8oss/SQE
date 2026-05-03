@@ -64,7 +64,7 @@ fn main() -> std::io::Result<()> {
     println!("Build time (UTC): {}", env!("BUILD_TIME"));
  
     // Print a terminal QR code (uses helper in items::qrcode to avoid repetition)
-    let index_url = "https://eypozax.github.io/docs/SQE/";
+    let index_url = "https://my8oss.github.io/docs/SQE/";
     items::qrcode::print_qrcode(index_url);
  
     Ok(())
